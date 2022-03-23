@@ -51,11 +51,11 @@ namespace Exercise1
                 con = new SqlConnection("data source=LAPTOP-EED9RP81\\ERDAWYNE;database=ERDA;Integrated Security = TRUE");
                 con.Open();
 
-                SqlCommand cm = new SqlCommand("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Hijabin','Tanjung','A1','Seyegan','0877222333')"
-                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Maskerin','Bowo','A2','Minggir','0813232890')"
-                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Fashion','Lisa','A3','Godean','0897364289')"
-                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Cooking Mom','Yati','A4','Turi','0853672484')"
-                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Boba Jam','Lala','A5','Gamping','0820439439')"
+                SqlCommand cm = new SqlCommand("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Hijabin','Tanjung','A1','Seyegan','0877222333')"
+                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Maskerin','Bowo','A2','Minggir','0813232890')"
+                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Fashion','Lisa','A3','Godean','0897364289')"
+                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Cooking Mom','Yati','A4','Turi','0853672484')"
+                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Boba Jam','Lala','A5','Gamping','0820439439')"
 
                     +
                 //Tabel Sewa
