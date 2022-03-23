@@ -74,8 +74,14 @@ namespace Exercise1
                     + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('1 Bulan','3-4-2022','SE05')"
 
 
-                    ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA1','20-03-2021','Rp. 500.000','Rp. 6.000.000','SE01')" +
-                    con);
+                    +
+                //Tabel Pembayaran
+                ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA1','20-03-2021','Rp. 500.000','Rp. 6.000.000','SE01')" 
+                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA2','3-12-2021','Rp. 750.000','Rp. 4.500.000','SE02')"
+                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA3','10-12-2021','Rp. 500.000','Rp. 12.000.000','SE03')"
+                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA4','2-1-2022','Rp. 800.000','Rp. 12.000.000','SE04')"
+                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA5','3-3-2022','Rp. 500.000','Rp. 1.500.000','SE05')"
+                   , con);
             }
         }
     }
