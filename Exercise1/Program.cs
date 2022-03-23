@@ -21,7 +21,7 @@ namespace Exercise1
                     "Nama_pemilik varchar(30), id_pemilik string(20), alamat string(30), phone int))", con);
 
                 SqlCommand cs = new SqlCommand("create table Sewa (id_sewa (varchar(10) not null primary key," +
-                    "tgl_booking date, uang_muka money, biaya_sewa money, status varchar(15))", con);
+                               "tgl_booking date, uang_muka money, biaya_sewa money, status varchar(15))", con);
 
                 SqlCommand co = new SqlCommand("create table Operasi (masa_kontrak varchar(20) not null primary key," +
                     "tgl_selesai date, id_sewa varchar(10))", con);
@@ -45,22 +45,17 @@ namespace Exercise1
             }
         
         }
+        static void Main(string[] args)
+        {
+        }
         public void InsertData()
         {
-            static void Main(string[] args) {
-                new Program().InsertData();
-
-            } 
-
-
-        
-            C
-        {
-            new Program().InsertData();
-        }
-        }
-        
-        {
+            SqlConnection con = null;
+            try
+            {
+                con = new SqlConnection("data source=LAPTOP-EED9RP81\\ERDAWYNE;database=ERDA;Integrated Security = TRUE");
+                con.Open();
+            }
         }
     }
 }
