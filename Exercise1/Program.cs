@@ -55,16 +55,18 @@ namespace Exercise1
                     + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Maskerin','Bowo','A2','Minggir','0813232890')"
                     + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Fashion','Lisa','A3','Godean','0897364289')"
                     + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Cooking Mom','Yati','A4','Turi','0853672484')"
-                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Boba Jam','Lala','A5','Gamping','0820439439')", con);
+                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Boba Jam','Lala','A5','Gamping','0820439439')"
+                     
+                    +
+                //Tabel Sewa
+                    ("insert into Sewa (id_sewa,tgl_booking,uang_muka,biaya_sewa money,status values('SE01','20-03-2021','Rp. 500.000','Rp. 1.500.000','Kontrak')" 
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, status values('SE02','3-12-2021','Rp. 750.000','Rp. 1.500.000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, status values('SE03','10-12-2021','Rp. 500.000','Rp. 1.500.000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, status values('SE04','2-1-2022','Rp. 800.000','Rp. 1.500.000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, status values('SE05','3-3-2022','Rp. 500.000','Rp. 1.500.000','Kontrak')"
 
-
-
-
-
-
-
-
-                    ("insert into Sewa (id_sewa,tgl_booking,uang_muka,biaya_sewa money,status values('SE01','20-03-2021','Rp. 500.000','Rp. 1.500.000','Kontrak')" + 
+                    +
+                //Tabel Operasi
 
                     ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('1 Tahun','20-03-2022','SE01')" + 
                     
