@@ -59,28 +59,28 @@ namespace Exercise1
 
                     +
                 //Tabel Sewa
-                    ("insert into Sewa (id_sewa,tgl_booking,uang_muka,biaya_sewa money,status values('SE01','20-03-2021','Rp. 500.000','Rp. 1.500.000','Kontrak')"
-                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, status values('SE02','3-12-2021','Rp. 750.000','Rp. 1.500.000','Kontrak')"
-                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, status values('SE03','10-12-2021','Rp. 500.000','Rp. 1.500.000','Kontrak')"
-                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, status values('SE04','2-1-2022','Rp. 800.000','Rp. 1.500.000','Kontrak')"
-                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, status values('SE05','3-3-2022','Rp. 500.000','Rp. 1.500.000','Kontrak')"
+                    ("insert into Sewa (id_sewa,tgl_booking,uang_muka,biaya_sewa money,statuss values('SE01','220-3-2-','500000',1.500.000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss values('SE02','2022-3-3','750000','1500000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss values('SE03','2021-12-10','500000','1500000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss values('SE04','2022-1-2','800000','1500000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss values('SE05','2022-3-3','500000','1500000','Kontrak')"
 
                     +
                 //Tabel Operasi
-                    ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('1 Tahun','20-03-2022','SE01')"
-                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('3 Bulan','3-3-2022','SE02')"
-                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('2 Tahun','10-12-2024','SE03')"
-                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('2 Tahun','2-1-2024','SE04')"
-                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('1 Bulan','3-4-2022','SE05')"
+                    ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa) values ('1 Tahun','2020-03-20','SE01')"
+                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa) values ('3 Bulan','2022-3-3','SE02')"
+                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa) values ('2 Tahun','2024-12-10','SE03')"
+                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa) values ('2 Tahun','2024-1-2','SE04')"
+                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa) values ('1 Bulan','2022-4-3','SE05')"
 
 
                     +
                 //Tabel Pembayaran
-                ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA1','20-03-2021','Rp. 500.000','Rp. 6.000.000','SE01')"
-                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA2','3-12-2021','Rp. 750.000','Rp. 4.500.000','SE02')"
-                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA3','10-12-2021','Rp. 500.000','Rp. 12.000.000','SE03')"
-                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA4','2-1-2022','Rp. 800.000','Rp. 12.000.000','SE04')"
-                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA5','3-3-2022','Rp. 500.000','Rp. 1.500.000','SE05')", con);
+                ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,id_sewa) values ('AA1','2021-03-20','500000','SE01')"
+                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,id_sewa) values ('AA2','2021-12-3','750000','SE02')"
+                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,id_sewa) values ('AA3','2021-12-10','500000','SE03')"
+                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,id_sewa) values ('AA4','2022-1-2','800000','SE04')"
+                + ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,id_sewa) values ('AA5','2022-3-3','500000','SE05')", con);
                 cm.ExecuteNonQuery();
 
                 Console.WriteLine("Isi sukses dibuat!");
