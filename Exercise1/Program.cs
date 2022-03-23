@@ -19,6 +19,9 @@ namespace Exercise1
 
                 SqlCommand cm = new SqlCommand("create table Mall (nama_ruko varchar(20) not null primary key," +
                     "Nama_pemilik varchar(30), id_pemilik string(20), alamat string(30), phone int))", con);
+
+                SqlCommand cm = new SqlCommand("create table Sewa (id_sewa (varchar(10) not null primary key," +
+                    "tgl_booking date, uang_muka money, biaya_sewa money, status varchar(15))", con);
                 cm.ExecuteNonQuery();
 
             }
