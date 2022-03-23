@@ -22,6 +22,11 @@ namespace Exercise1
 
                 SqlCommand cm = new SqlCommand("create table Sewa (id_sewa (varchar(10) not null primary key," +
                     "tgl_booking date, uang_muka money, biaya_sewa money, status varchar(15))", con);
+
+                SqlCommand cm = new SqlCommand("create table Operasi (masa_kontrak varchar(20) not null primary key," +
+                    "tgl_selesai date, id_sewa varchar(10))", con);
+
+
                 cm.ExecuteNonQuery();
 
             }
