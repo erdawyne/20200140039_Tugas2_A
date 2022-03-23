@@ -23,7 +23,7 @@ namespace Exercise1
 
                 ("create table Operasi (masa_kontrak varchar(20) not null primary key, tgl_selesai date, id_sewa varchar(10))" +
 
-                ("create table Pembayaran (id_pembayaran varchar(10) not null primary key, tgl_bayar date, jml_bayar money, id_sewa varchar(10))", con);
+                ("create table Pembayaran (id_pembayaran varchar(10) not null primary key, tgl_bayar date, id_sewa varchar(10))", con);
                 cm.ExecuteNonQuery();
 
                 Console.WriteLine("Tabel sukses dibuat!");
@@ -51,19 +51,19 @@ namespace Exercise1
                 con = new SqlConnection("data source=LAPTOP-EED9RP81\\ERDAWYNE;database=ERDA;Integrated Security = TRUE");
                 con.Open();
 
-                SqlCommand cm = new SqlCommand("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Hijabin','Tanjung','A1','Seyegan','0877222333')"
-                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Maskerin','Bowo','A2','Minggir','0813232890')"
-                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Fashion','Lisa','A3','Godean','0897364289')"
-                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Cooking Mom','Yati','A4','Turi','0853672484')"
-                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone values('Boba Jam','Lala','A5','Gamping','0820439439')"
+                SqlCommand cm = new SqlCommand("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone) values('Hijabin','Tanjung','A1','Seyegan','0877222333')"
+                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone) values('Maskerin','Bowo','A2','Minggir','0813232890')"
+                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone) values('Fashion','Lisa','A3','Godean','0897364289')"
+                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone) values('Cooking Mom','Yati','A4','Turi','0853672484')"
+                    + ("insert into Mall (nama_ruko,nama_pemilik,id_pemilik,alamat,phone) values('Boba Jam','Lala','A5','Gamping','0820439439')"
 
                     +
                 //Tabel Sewa
-                    ("insert into Sewa (id_sewa,tgl_booking,uang_muka,biaya_sewa money,statuss values('SE01','220-3-2-','500000',1.500.000','Kontrak')"
-                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss values('SE02','2022-3-3','750000','1500000','Kontrak')"
-                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss values('SE03','2021-12-10','500000','1500000','Kontrak')"
-                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss values('SE04','2022-1-2','800000','1500000','Kontrak')"
-                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss values('SE05','2022-3-3','500000','1500000','Kontrak')"
+                    ("insert into Sewa (id_sewa,tgl_booking,uang_muka,biaya_sewa money,statuss) values('SE01','220-3-2-','500000',1500000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss) values('SE02','2022-3-3','750000','1500000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss) values('SE03','2021-12-10','500000','1500000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss) values('SE04','2022-1-2','800000','1500000','Kontrak')"
+                    + ("insert into Sewa (id_sewa, tgl_booking, uang_muka, biaya_sewa money, statuss) values('SE05','2022-3-3','500000','1500000','Kontrak')"
 
                     +
                 //Tabel Operasi
