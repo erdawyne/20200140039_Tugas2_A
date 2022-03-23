@@ -18,7 +18,7 @@ namespace Exercise1
                 con.Open();
 
                 SqlCommand cm = new SqlCommand("create table Mall (nama_ruko varchar(20) not null primary key," +
-                    "Nama_pemilik varchar(30), id_pemilik string(20), alamat string(30), phone int))", con);
+                    "nama_pemilik varchar(30), id_pemilik string(20), alamat string(30), phone int))", con);
 
                 SqlCommand cs = new SqlCommand("create table Sewa (id_sewa (varchar(10) not null primary key," +
                                "tgl_booking date, uang_muka money, biaya_sewa money, status varchar(15))", con);
@@ -55,6 +55,8 @@ namespace Exercise1
             {
                 con = new SqlConnection("data source=LAPTOP-EED9RP81\\ERDAWYNE;database=ERDA;Integrated Security = TRUE");
                 con.Open();
+
+                SqlCommand cm = new SqlCommand("insert into Mall (nama_ruko,nama_pemilik,id_pemilik_alamat,phone values('Hijabin','Tanjung','A1','Seyegan','0877222333')", con);
             }
         }
     }
