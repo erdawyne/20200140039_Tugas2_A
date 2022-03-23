@@ -67,9 +67,13 @@ namespace Exercise1
 
                     +
                 //Tabel Operasi
+                    ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('1 Tahun','20-03-2022','SE01')" 
+                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('3 Bulan','3-3-2022','SE02')"
+                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('2 Tahun','10-12-2024','SE03')"
+                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('2 Tahun','2-1-2024','SE04')"
+                    + ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('1 Bulan','3-4-2022','SE05')"
 
-                    ("Insert into Operasi (masa_kontrak,tgl_selesai,id_sewa values ('1 Tahun','20-03-2022','SE01')" + 
-                    
+
                     ("Insert into Pembayaran (id_pembayaran,tgl_bayar,jml_bayar,total_sewa,id_sewa values ('AA1','20-03-2021','Rp. 500.000','Rp. 6.000.000','SE01')" +
                     con);
             }
