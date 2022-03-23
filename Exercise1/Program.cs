@@ -19,7 +19,7 @@ namespace Exercise1
 
                 SqlCommand cm = new SqlCommand("create table Mall (nama_ruko varchar(20) not null primary key, nama_pemilik varchar(30), id_pemilik varchar(30), alamat varchar(20), phone int))" +
 
-                ("create table Sewa(id_sewa varchar(10) not null primary key, tgl_booking date, uang_muka money, biaya_sewa money, status varchar(15))" +
+                ("create table Sewa(id_sewa varchar(10) not null primary key, tgl_booking date, uang_muka money, biaya_sewa money, statuss varchar(15))" +
 
                 ("create table Operasi (masa_kontrak varchar(20) not null primary key, tgl_selesai date, id_sewa varchar(10))" +
 
