@@ -20,13 +20,13 @@ namespace Exercise1
                 SqlCommand cm = new SqlCommand("create table Mall (nama_ruko varchar(20) not null primary key," +
                     "Nama_pemilik varchar(30), id_pemilik string(20), alamat string(30), phone int))", con);
 
-                SqlCommand cm = new SqlCommand("create table Sewa (id_sewa (varchar(10) not null primary key," +
+                SqlCommand cs = new SqlCommand("create table Sewa (id_sewa (varchar(10) not null primary key," +
                     "tgl_booking date, uang_muka money, biaya_sewa money, status varchar(15))", con);
 
-                SqlCommand cm = new SqlCommand("create table Operasi (masa_kontrak varchar(20) not null primary key," +
+                SqlCommand co = new SqlCommand("create table Operasi (masa_kontrak varchar(20) not null primary key," +
                     "tgl_selesai date, id_sewa varchar(10))", con);
 
-                SqlCommand cm = new SqlCommand("create table Pembayaran (id_pembayaran varchar(10) not null primary key," +
+                SqlCommand cp = new SqlCommand("create table Pembayaran (id_pembayaran varchar(10) not null primary key," +
                     "tgl_bayar date, jml_bayar money, id_sewa varchar(10))", con);
 
                 cm.ExecuteNonQuery();
