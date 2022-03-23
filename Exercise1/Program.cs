@@ -45,7 +45,21 @@ namespace Exercise1
             }
         
         }
-        static void Main(string[] args)
+        public void InsertData()
+        {
+            static void Main(string[] args) {
+                new Program().InsertData();
+
+            } 
+
+
+        
+            C
+        {
+            new Program().InsertData();
+        }
+        }
+        
         {
         }
     }
