@@ -26,6 +26,8 @@ namespace Exercise1
                 SqlCommand cm = new SqlCommand("create table Operasi (masa_kontrak varchar(20) not null primary key," +
                     "tgl_selesai date, id_sewa varchar(10))", con);
 
+                SqlCommand cm = new SqlCommand("create table Pembayaran (id_pembayaran varchar(10) not null primary key," +
+                    "tgl_bayar date, jml_bayar money, id_sewa varchar(10))", con);
 
                 cm.ExecuteNonQuery();
 
